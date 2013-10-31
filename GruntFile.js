@@ -14,19 +14,7 @@ module.exports = function (grunt) {
                 }
             }
         },
-        typescript: {
-            base: {
-                src: ['lib/index.ts'],
-                dest: 'js/index.js',
-                options: {
-                    module: 'amd',
-                    target: 'es5'
-                }
-            }
-        },
         watch: {
-            files: '**/*.ts',
-            tasks: ['typescript']
         },
         open: {
             dev: {
